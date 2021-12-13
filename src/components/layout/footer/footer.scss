@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__language {
+        display: flex;
+        padding: 20px 0;
+    }
+
+    &__current-language {
+        margin-left: 8px;
+    }
+
+    &__copyright{
+        display: flex;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    &__copyright-link {
+        margin-left: 8px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

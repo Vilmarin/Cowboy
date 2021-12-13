@@ -1,0 +1,14 @@
+.shopping-cart {
+    display: flex;
+    font-weight: 500;
+
+    &__discounts {
+        color: $discount_color;
+        font-weight: normal;
+    }
+
+    &__reverse {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}

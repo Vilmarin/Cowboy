@@ -1,0 +1,9 @@
+mixin slide ()
+    -
+        const {classname="", imgSrc, title, subtitle} = attributes;
+
+
+    .slider__slide
+        img(src=imgSrc, width="398px" height="532px" alt="")
+        p.slider__title #{title}
+        p.slider__subtitle #{subtitle}

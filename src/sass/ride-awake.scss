@@ -1,0 +1,16 @@
+.ride-awake {
+    flex-direction: column;
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        width: 580px;
+    }
+}

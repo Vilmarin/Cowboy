@@ -1,0 +1,17 @@
+$containerDesktopOffset: 30px;
+
+.container {
+  width: 100%;
+  &_mod {
+    &_big {
+      max-width: 1376px + $containerDesktopOffset * 2;
+      margin: 0 auto;
+      padding: 0 $containerDesktopOffset;
+    }
+    &_small {
+      max-width: 1240px + $containerDesktopOffset * 2;
+      margin: 0 auto;
+      padding: 0 $containerDesktopOffset;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mixin shopping-cart()
+    -
+        const {classname=""} = attributes;
+
+    div(class=(`shopping-cart ${classname}`))
+        p From  €2,190 <s>€2,900</s><br><span class="shopping-cart__discounts">Discounts available</span>
+        button(class = 'button') Order now

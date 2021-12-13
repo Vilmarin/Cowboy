@@ -1,0 +1,13 @@
+include ../container/container.pug
+
+mixin section()
+  -
+    const { classname = '', withoutContainer = false, id, containerMod='small' } = attributes;
+    // {containerMod: 'small' | 'big' }
+
+  section(class=(`section ${classname}`) id=id)
+    if withoutContainer
+      block
+    else
+      +container(mod=containerMod)
+        block

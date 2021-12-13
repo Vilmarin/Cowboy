@@ -1,0 +1,15 @@
+include  ../../base/shopping-cart/shopping-cart
+mixin overview()
+    -
+        const {classname=""} = attributes;
+
+    section.overview.overview__wrapper
+        .overview__inner
+            h2.overview__title Electric bike reimagined
+            p.overview__subtitle A simple push of the pedal, and intuition gains new meaning as the motor’s torque senses your force and the speed you need. The carbon belt spans smoothly, as does the road before you. A newfound freedom in a city wilder than you once thought.
+            +shopping-cart (classname='shopping-cart__reverse')
+
+        .overview__photo
+            img.overview__wireless-bike-charging(src="../src/img/wireless-bike-charging.png", alt="беспроводная зарядка")
+            img.overview__red-bike-headlight(src="../src/img/red-bike-headlight.png", alt="красные фары")
+            img.overview__light-bike-headlight(src="../src/img/light-bike-headlight.png", alt="светлые фары")

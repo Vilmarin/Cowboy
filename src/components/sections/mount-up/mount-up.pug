@@ -1,0 +1,15 @@
+mixin mount-up()
+    -
+        const {classname=""} = attributes;
+
+    .mount-up.mount-up__wrapper
+        .mount-up__inner
+            .mount-up__title Cowboy 4
+            .mount-up__sub-title Mount up, ride on.
+            .mount-up__color-picker
+                .mount-up__black
+                .mount-up__grey
+                .mount-up__dark-gray
+            button(class = 'button button--color') Order now
+            .mount-up__bike
+                img(src="/src/img/cowboy-4.png", alt="")

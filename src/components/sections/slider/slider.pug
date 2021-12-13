@@ -1,0 +1,32 @@
+include ./slide
+mixin slider ()
+    -
+        const {classname="", list} = attributes;
+        const slidelist = [
+            {
+                imgSrc:"../src/img/slide.png",
+                title: "Removable battery",
+                subtitle:"The battery goes the distance with you and clicks right back into place.",
+            },
+            {
+                imgSrc:"../src/img/slide2.png",
+                title: "Assistance",
+                subtitle:"A swift first kick powers the speed you need for an active ride and an easy climb..",
+            },
+            {
+                imgSrc:"../src/img/slide3.png",
+                title: "Wireless charging",
+                subtitle:"Once docked in the cockpit, your phone is in a state of charge..",
+            },
+            {
+                imgSrc:"../src/img/slide4.png",
+                title: "Integrated Lights",
+                subtitle:"Lights integrated into the frame give you always-on visibility day and night.",
+            },
+        ]
+
+    section.key-features.key-features__wrapper
+        .key-features__title Key features
+        .slider
+            each obj in slidelist
+                +slide(imgSrc=obj.imgSrc, title=obj.title, subtitle=obj.subtitle )

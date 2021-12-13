@@ -1,0 +1,7 @@
+mixin container()
+  -
+    const { classname = '', mod = 'small' } = attributes;
+    // {mod: 'small' | 'big'}
+
+  div(class=(`container container_mod_${mod} ${classname}`))
+    block

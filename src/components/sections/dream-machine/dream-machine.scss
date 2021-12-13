@@ -1,0 +1,42 @@
+.dream-machine {
+    padding: 0;
+    &__wrapper {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%), #101010;
+        border-radius: 24px;
+        height: 780px;
+        position: relative;
+        overflow: hidden;
+    }
+
+     &__title {
+        position: absolute;
+        color: $classic_white;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        top: 21%;
+        left: 50%;
+    }
+
+    &__sub-title {
+        position: absolute;
+        color: $classic_white;
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 112px;
+        top: 24%;
+        left: 39%;
+        width: 400px;
+        text-align: center;
+    }
+
+    &__bike {
+        background-image: url('../../../src/img/cowboy-4-black\ 1.png') ;
+        position: relative;
+        height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        top: 49%;
+        left: 8%;
+    }
+}

@@ -1,0 +1,47 @@
+.header {
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 129px;
+        height: 20px;
+        margin-right: 40px;
+
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin-left: 32px;
+        color: $text_black;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+
+        &--first {
+            color: $text_black;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        margin-top: 32px;
+    }
+
+    &__shopping-cart {
+        margin-top: 32px;
+        padding-bottom: 32px;
+    }
+}

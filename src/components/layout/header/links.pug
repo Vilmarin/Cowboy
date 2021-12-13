@@ -1,0 +1,19 @@
+mixin links ()
+    -
+       const  values = [];
+
+    ul
+        each item in values.length ? values : [
+            {
+            link: 'home.html',
+            title: 'Home'
+            },
+            {
+            link: 'documentation.html',
+            title: 'documentation'},
+            {
+            link: 'about.html',
+            title: 'about'}]
+    - const {link, title} = item
+    li
+      a(href= link)= title

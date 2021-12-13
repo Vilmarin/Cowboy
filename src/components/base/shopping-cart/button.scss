@@ -1,0 +1,21 @@
+.button {
+    background-color:$text_black;
+    color: $classic_white;
+    border-radius: 25px;
+    width: 100px;
+    font-family: 'Poppins';
+
+    &--color{
+      background-color:$classic_white;
+      color: $text_black;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      height: 48px;
+      width: 140px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+    }
+}

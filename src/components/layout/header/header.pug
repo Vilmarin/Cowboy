@@ -1,0 +1,29 @@
+include ../../base/shopping-cart/shopping-cart
+include ../container/container.pug
+mixin header ()
+    -
+        const {classname=""} = attributes;
+
+    header.header
+        +container(mod='big')
+            .header__wrapper
+                .header__top
+                    .header__logo
+                        img(src="../src/img/logo.svg", alt="")
+                    nav.header__menu
+                        |
+                        |
+                        a.header__link--first(href="")  Overview
+                        |
+                        |
+                        a.header__link(href="")  Key features
+                        |
+                        |
+                        a.header__link(href="")  Ride awake
+                        |
+                        |
+                        a.header__link(href="")  Reviews
+                        |
+                        |
+                        a.header__link(href="")  Tech specs
+                +shopping-cart(classname='header__shopping-cart')

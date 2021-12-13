@@ -1,0 +1,80 @@
+.key-specifications {
+    background-color: $text_black;
+    list-style-type: none;
+    border-radius: 24px;
+
+    &__title {
+        color: $classic_white;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: normal;
+        padding: 10px 42px;
+        display: flex;
+        position: relative;
+    }
+
+    &__number {
+        width: 31px;
+        height: 32px;
+        background: linear-gradient(255.9deg, rgba(255, 255, 255, 0.08) -15.17%, rgba(255, 255, 255, 0) 108.43%), rgba(16, 16, 16, 0.2);
+        backdrop-filter: blur(12px);
+        border-radius: 9px;
+        text-align: center;
+        margin-left: 12px;
+    }
+
+    &__inner {
+        display: flex;
+        padding-top: 23px;
+        position: relative;
+        font-weight: normal;
+        padding-left: 78px;
+        margin: 0 auto;
+
+
+        &::before {
+            position: absolute;
+            content: " ";
+            width: 820px;
+            height: 1px;
+            border: none;
+            background-color: #C4C4C4;
+            display: block;
+            top: 7px;
+            left: 351px;
+            opacity: 0.1;
+        }
+    }
+
+    &__list {
+        color: $classic_white;
+        width: 543px;
+        margin: 11px 0;
+
+            &:first-child {
+                padding-left: 284px;
+            }
+
+            &:last-child {
+                padding-left: 124px;
+            }
+    }
+
+    &_specifications__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__arrow{
+        background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.7071 7.70711C13.3166 8.09763 12.6834 8.09763 12.2929 7.70711L7 2.41421L1.70711 7.70711C1.31658 8.09763 0.683417 8.09763 0.292893 7.70711C-0.0976314 7.31658 -0.0976313 6.68342 0.292894 6.29289L6.29289 0.292893C6.68342 -0.0976316 7.31658 -0.0976316 7.70711 0.292893L13.7071 6.29289C14.0976 6.68342 14.0976 7.31658 13.7071 7.70711Z' fill='white'/%3E%3C/svg%3E%0A");
+        width: 14px;
+        height: 8px;
+        content: "";
+        border: none;
+        outline: none;
+        position: absolute;
+        right: 3%;
+        top: 36%;
+        background-color: inherit;
+    }
+}

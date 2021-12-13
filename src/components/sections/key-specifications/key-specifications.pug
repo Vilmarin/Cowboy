@@ -1,0 +1,80 @@
+include ./specifications
+mixin key-specifications(parameter,number)
+    -
+        const {classname=""} = attributes;
+        const specList = [
+            {
+                label:'Price',
+                value:'€2,190',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+            {
+                label:'Colors',
+                value:'Black, Khaki, Sand',
+            },
+        ]
+
+    section.key-specifications
+        .key-specifications__wrapper
+            h3.key-specifications__title=parameter
+                .key-specifications__number=number
+                button.key-specifications__arrow
+            if(parameter=='Key specifications')
+                each obj in specList
+                    +specifications(label=obj.label,value=obj.value)
+
+                //- +specifications('Price','€2,190')
+                //- +specifications('Colors','Black, Khaki, Sand')
+                //- +specifications("Rider's height",'Optimized for riders between 170-195 cm tall ')
+                //- +specifications("Weight",'18.9 kg total weight, including battery')
+                //- +specifications('Battery Range','Up to 70 km autonomy')
+                //- +specifications('Charging time','100% recharged in 3.5 hours')
+                //- +specifications('Assist Speed','25 km/h')
+                //- +specifications('Included in box','3mm, 4 mm, 5 mm and 6 mm Allen keys, belt spanner (Spa 1), Front and Rear STVZO lights, 4x Spoke reflectors, rear reflector, phone mount, bell')
+                //- +specifications('Warranty','2 years')
+                //- +specifications('Control mode','Connected phone with app + battery unlock')
+                //- +specifications('Wireless phone charging','Up to 15W')
+
